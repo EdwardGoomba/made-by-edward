@@ -1,40 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
 
-// Header
-const HeaderWrap = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2em;
-  padding-bottom: 0;
-`
-
-// Logo Style
-const Logo = styled.h3`
-  font-family: acumin-pro, sans-serif;
-  font-size: 1.5em;
-  margin-top: 1em !important;
-`
-
-// Nav Style
-const Nav = styled.ul`
-  font-family: acumin-pro, sans-serif;
-  display: flex;
-  text-decoration: none;
-`
-
-const NavLinks = styled.li`
-  padding-left: 1em;
-  padding-top: 0.8em;
-  list-style: none;
-  font-size: 1.2em;
-`
-
-const Links = styled(Link)`
-  box-shadow: none !important;
-  color: #000;
-`
+// Styled Components
+import HeaderWrap from '../components/styled/HeaderWrap'
+import Logo from '../components/styled/Logo'
+import Nav from '../components/styled/Nav'
+import NavLinks from '../components/styled/NavLinks'
+import Links from '../components/styled/Links'
 
 const Header = () => {
   return (
@@ -44,6 +15,10 @@ const Header = () => {
         <NavLinks>
           <Links to='/about'>about</Links>
         </NavLinks>
+        {/* <NavLinks>|</NavLinks>
+        <NavLinks>
+          <Links to='/projects'>projects</Links>
+        </NavLinks> */}
         <NavLinks>|</NavLinks>
         <NavLinks>
           <Links to='/thoughts'>thoughts</Links>
